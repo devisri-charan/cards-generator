@@ -46,7 +46,7 @@ function App() {
       <div className='w-20 h-28 bg-gray-300 rounded-md p-8 m-4 text-center flex flex-col items-center justify-center cursor-pointer' onClick={handleDraw}>
         <p className='font-bold text-lg cursor-pointer'>Draw 5 Cards</p>
       </div>
-      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 m-4 gap-4 justify-items-center'>
+      <div className='grid grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-4 m-4 justify-items-center'>
         {drawnCards.map((card, index) => (
           <Card key={index} rank={card.rank} suit={card.suit} />
         ))}
